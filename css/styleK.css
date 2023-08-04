@@ -1,0 +1,249 @@
+
+/* ... (Your existing CSS styles) ... */
+
+/* Add hover effect to navbar items */
+.custom-navbar .nav-item:hover .nav-link {
+color: blue;
+
+}
+
+/* Override Bootstrap's default styles for dropdown */
+.custom-navbar .dropdown-menu {
+background-color: #93111D;
+border: none;
+box-shadow: none;
+}
+
+.custom-navbar .dropdown-item {
+color: white;
+}
+
+/* Optional: Adjust spacing for dropdown items */
+.custom-navbar .dropdown-item {
+padding: 5px 10px;
+}
+
+/* Optional: Add more spacing for the collapsed button */
+.custom-navbar .navbar-toggler {
+margin-right: 10px;
+}
+
+/* Custom CSS to set the width and color of the navbar */
+.custom-navbar {
+width: 50%;
+background-color: #93111D; /* Change the background color to white */
+margin-top: 20px; /* Add spacing to the top of the navbar */
+margin-left: 20px; /* Add spacing to the left of the navbar */
+cursor: pointer;
+border-radius: 30px; /* Set border-radius to 30px */
+height: 40px;
+}
+
+.nav-item a:hover {
+color: black !important;
+}
+
+/* Style the logo image */
+.navbar-logo {
+display: block;
+background-color: white;
+width: 100%; /* Set the logo width to 100% */
+height: 100%; /* Set the logo height to 100% of the navbar height */
+border-radius: 30px; /* Set border-radius to 30px */
+box-shadow: 7px 0px 4px rgb(0, 0, 255); /* Add blue shadow */
+}
+
+/* Optional: Center the logo image vertically within the navbar */
+.navbar-nav {
+align-items: center;
+}
+
+.navbar-shadow {
+position: absolute; /* Position the navbar-shadow absolutely */
+top: 10px; /* Align it to the top of the body */
+left: 12px; /* Align it to the left of the body */
+width: 50%; /* Set the width to match the custom-navbar */
+height: 6%; /* Set the height to match the custom-navbar */
+z-index: -1; /* Set a negative z-index to move it behind .custom-navbar */
+border: 1px solid white;
+background-color: rgba(240, 248, 255, 0);
+}
+
+.logo-left {
+z-index: 2;
+position: absolute;
+top: 20px;
+box-shadow: 5px 0px 0px #18265B;
+}
+
+/* Fullscreen background image */
+body {
+background: url('../img/kontak.png') no-repeat center center fixed;
+background-size: cover;
+font-family: 'Poppins', sans-serif; /* Use Poppins font */
+margin: 0;
+padding: 0;
+}
+
+.text-field {
+position: fixed;
+left: 40%;
+color: white;
+top: 100px;
+}
+
+.centered-text {
+position: fixed;
+left: 50%;
+top: 120px;
+transform: translateX(-50%);
+background-color: #93111D;
+height: 50px;
+text-align: center;
+width: 190px;
+border-radius: 10px;
+}
+
+.centered-text-2 {
+position: fixed;
+left: 50%;
+top: 160px;
+transform: translateX(-50%);
+height: 50px;
+text-align: center;
+width: 15%;
+}
+
+.text-field-2 {
+position: fixed;
+left: 40%;
+color: white;
+top: 360px;
+}
+
+.centered-text-bottom {
+position: fixed;
+left: 50%;
+top: 380px;
+transform: translateX(-50%);
+background-color: #93111D;
+height: 55px;
+text-align: center;
+width: 220px;
+border-radius: 10px;
+}
+
+.centered-text-bottom-2 {
+position: fixed;
+left: 50%;
+top: 425px;
+transform: translateX(-50%);
+height: 50px;
+text-align: center;
+width: 25%;
+}
+
+.centered-img {
+position: fixed;
+left: 50%;
+top: 180px;
+transform: translateX(-50%);
+height: 50px;
+text-align: center;
+width: 100%;
+}
+
+.centered-img img {
+width: 150px;
+height: 150px;
+padding: 5px;
+margin: 25px;
+transition: 1s;
+}
+
+.centered-img .image-container {
+display: inline-block;
+margin: 10px;
+position: relative;
+cursor: pointer;
+transition: transform 0.3s; /* Set the initial transition for all images */
+}
+
+/* On hover, scale the image and change its content */
+.centered-img .image-container:hover img {
+transform: scale(1.2);
+z-index: 2;
+}
+
+/* Set the new image content on hover */
+.centered-img .image-container::after {
+content: "";
+position: absolute;
+top: 50%;
+left: 50%;
+width: 150px;
+height: 150px;
+margin-top: -75px;
+margin-left: -75px;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+opacity: 0;
+z-index: 1;
+}
+
+
+.centered-img .image-container:hover::after {
+opacity: 1;
+}
+
+.centered-img .image-container:nth-child(1):hover::after {
+transition: 1s;
+background-image: url('../img/igW.png');
+}
+
+.centered-img .image-container:nth-child(2):hover::after {
+transition: 1s;
+background-image: url('../img/tiktokW.png');
+}
+
+.centered-img .image-container:nth-child(3):hover::after {
+transition: 1s;
+background-image: url('../img/waW.png');
+}
+
+.centered-img .image-container:nth-child(4):hover::after {
+transition: 1s;
+background-image: url('../img/tokopediaW.png');
+}
+
+.centered-img .image-container:nth-child(5):hover::after {
+transition: 1s;
+background-image: url('../img/facebookW.png');
+}
+
+.custom-btn {
+background-color: #93111D;
+width: 100%;
+border: none;
+color: white;
+padding: 10px 20px;
+border-radius: 30px;
+cursor: pointer;
+box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+/* Tambahkan efek transition ketika mengangkat pada hover selama 0.3 detik */
+transition: transform 0.3s;
+}
+
+
+/* Efek hover dengan shadow berwarna putih dan animasi mengangkat tombol */
+.custom-btn:hover {
+background-color: blue;
+box-shadow: 0 2px 8px rgba(255, 255, 255, 0.8);
+/* Mengangkat tombol sebesar 5px ketika di hover */
+transform: translateY(-5px);
+}
+/* Style the text */
+.centered-text p {
+margin-top: -5px;
+}

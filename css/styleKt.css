@@ -1,0 +1,153 @@
+/* ... (Your existing CSS styles) ... */
+
+/* Add hover effect to navbar items */
+.custom-navbar .nav-item:hover .nav-link {
+color: blue;
+
+}
+
+/* Override Bootstrap's default styles for dropdown */
+.custom-navbar .dropdown-menu {
+background-color: #93111D;
+border: none;
+box-shadow: none;
+}
+
+.custom-navbar .dropdown-item {
+color: white;
+}
+
+/* Optional: Adjust spacing for dropdown items */
+.custom-navbar .dropdown-item {
+padding: 5px 10px;
+}
+
+/* Optional: Add more spacing for the collapsed button */
+.custom-navbar .navbar-toggler {
+margin-right: 10px;
+}
+
+/* Custom CSS to set the width and color of the navbar */
+.custom-navbar {
+width: 50%;
+background-color: #93111D; /* Change the background color to white */
+margin-top: 20px; /* Add spacing to the top of the navbar */
+margin-left: 20px; /* Add spacing to the left of the navbar */
+cursor: pointer;
+border-radius: 30px; /* Set border-radius to 30px */
+height: 40px;
+}
+
+.nav-item a:hover {
+color: black !important;
+}
+
+/* Style the logo image */
+.navbar-logo {
+display: block;
+background-color: white;
+width: 100%; /* Set the logo width to 100% */
+height: 100%; /* Set the logo height to 100% of the navbar height */
+border-radius: 30px; /* Set border-radius to 30px */
+box-shadow: 7px 0px 4px rgb(0, 0, 255); /* Add blue shadow */
+}
+
+/* Optional: Center the logo image vertically within the navbar */
+.navbar-nav {
+align-items: center;
+}
+
+.navbar-shadow {
+position: absolute; /* Position the navbar-shadow absolutely */
+top: 10px; /* Align it to the top of the body */
+left: 12px; /* Align it to the left of the body */
+width: 50%; /* Set the width to match the custom-navbar */
+height: 6%; /* Set the height to match the custom-navbar */
+z-index: -1; /* Set a negative z-index to move it behind .custom-navbar */
+border: 1px solid white;
+background-color: rgba(240, 248, 255, 0);
+}
+
+.logo-left {
+z-index: 2;
+position: absolute;
+top: 20px;
+box-shadow: 5px 0px 0px #18265B;
+}
+
+/* Fullscreen background image */
+body {
+background: url('../img/bgKt.png') no-repeat;
+background-size: cover;
+height: 50vh;
+font-family: 'Poppins', sans-serif; /* Use Poppins font */
+margin: 0;
+padding: 0;
+}
+
+.additional-image {
+width: 100%;
+height: 100%;
+animation: changeImage 10s infinite;
+}
+
+.custom-btn {
+background-color: #93111D;
+border: none;
+color: white;
+padding: 10px 20px;
+border-radius: 30px;
+cursor: pointer;
+box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+/* Tambahkan efek transition ketika mengangkat pada hover selama 0.3 detik */
+transition: transform 0.3s;
+}
+
+.custom-btn:hover {
+background-color: blue;
+box-shadow: 0 2px 8px rgba(255, 255, 255, 0.8);
+/* Mengangkat tombol sebesar 5px ketika di hover */
+transform: translateY(-5px);
+}
+
+@keyframes changeImage {
+0% {
+content: url('../img/imgKt2.png');
+}
+33% {
+content: url('../img/imgKt3.png');
+}
+66% {
+content: url('../img/imgKt4.png');
+}
+100% {
+content: url('../img/imgKt5.png');
+}
+}
+
+.fullscreen-image {
+position: absolute;
+top: 100%;
+left: 0;
+width: 100%;
+height: 1900px;
+background: url('../img/bgKt2.png') no-repeat;
+background-size: cover;
+z-index: -1; /* Place it below other content */
+}
+
+.produk {
+text-align: center;
+color: white;
+margin-top: 100px;
+background-color: #93111D;
+width: 100%;
+border-radius: 10px;
+}
+
+.footer {
+width: 100%;
+height: 300px;
+margin-top: 1950px;
+background-color: #93111D;
+}
